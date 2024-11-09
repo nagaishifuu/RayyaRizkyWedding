@@ -42,7 +42,7 @@ function toggleMusic(event) {
   const musicButton = document.getElementById("music-button");
 
   if (isPlaying) {
-    musicButton.innerHTML = '<i class="fas fa-fw fa-pause" style="transform: translateY(3px);"></i>';
+    musicButton.innerHTML = '<i class="fas fa-fw fa-circle-play" style="transform: translateY(6px);"></i>';
     musicButton.classList.remove("rotate");
     music.pause();
   } else {
