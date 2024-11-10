@@ -10,10 +10,6 @@
   <!-- bootstrap5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet" />
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Lightbox -->
@@ -43,7 +39,11 @@
       <h4><span id="nama-sambutan"></span></h4>
       <h5 class="my-2 py-4">You are invited to</h5>
       <h3 class="my-2 fw-bold">The Wedding of</h3>
-      <img class="pt-1 pb-4" src="assets/img/nama-pengantin.png" alt="nama-pengantin" />
+      <h1 class="justify-content-center huruf-sambung">Rayya</h1>
+      <h1 class="py-1 justify-content-center">
+        <span class="coklatdan">&</span>
+        <span class="huruf-sambung">Rizki</span>
+      </h1>
       <h4 class="my-4 fw-bold">14.12.2024</h4>
 
       <!-- Button with onclick to play video -->
@@ -156,9 +156,9 @@
   <section id="calon-pengantin-section" class="calon-pengantin-section py-5">
     <div class="bunga-container">
       <img src="assets/img/BGbungakiri.png" alt="Bride and Groom" class="bunga-kiri" data-aos="fade-right"
-        data-aos-easing="linear" data-aos-duration="2500" />
+        data-aos-easing="linear" data-aos-duration="2000" />
       <img src="assets/img/BGbungakanan.png" alt="Bride and Groom" class="bunga-kanan" data-aos="fade-left"
-        data-aos-easing="linear" data-aos-duration="2500" />
+        data-aos-easing="linear" data-aos-duration="2000" />
     </div>
     <!-- Judulnya -->
     <div class="brideGroom my-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
@@ -173,7 +173,7 @@
       <!-- calon -->
       <div class="row my-3 justify-content-center">
         <!-- Calon 1 -->
-        <div class="ticket-wrapper" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+        <div class="ticket-wrapper" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <div class="tiket-calon my-5 pt-3 text-center">
             <div>
               <h2 class="text-center huruf-sambung py-2">Rayya</h2>
@@ -186,7 +186,7 @@
 
         <!-- Calon2 -->
         <div class="ticket-wrapper" class="ticket-wrapper" data-aos="fade-down" data-aos-easing="linear"
-          data-aos-duration="2000">
+          data-aos-duration="1500">
           <div class="tiket-calon my-2 pt-3 text-center">
             <div>
               <h2 class="text-center huruf-sambung py-2">Rizki</h2>
@@ -251,7 +251,7 @@
 
             <!-- Tombol tambah Ke kalender -->
             <div class="row justify-content-between px-3 text-center">
-              <div class="w-100 my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear"
+              <div class="w-100 my-2 rounded p-3" data-aos="fade-left" data-aos-easing="linear"
                 data-aos-duration="1500">
                 <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Rayya+Rizky+Wedding&details=Pernikahan+Rayya+dengan+Rizky&location=Rumah+Perubahan+Jakarta+Escape%2C+Jl.+Mabes+2+No.5%2C+Jatimurni%2C+Kec.+Pd.+Melati%2C+Kota+Bks%2C+Jawa+Barat+17431%2C+Indonesia&dates=20241214T033000Z%2Fundefined"
                   class="btn btn-lg btn-coklat rounded-pill" target="_blank">
@@ -358,18 +358,9 @@
           <div class="section-title">
             <h1 class="text-pink huruf-sambung">Wedding Gift</h1>
             <p class="col-8" style="color: var(--coklat);">
-              Bagi yang ingin memberikan tanda kasih, dapat mengirimkan melalui fitur di bawah ini:
+              Bagi yang ingin memberikan tanda kasih, dapat mengirimkan melalui rekening di bawah ini:
             </p>
           </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-between px-3 text-center">
-        <div class="w-100 my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear"
-          data-aos-duration="1500">
-          <a href="#bank-section" class="btn btn-lg btn-coklat rounded-pill" style="margin-left: 0;">
-            Send Gift
-          </a>
         </div>
       </div>
     </div>
@@ -553,27 +544,32 @@
     <div style="height: 90px"></div>
   </footer>
 
-  <!-- jquery -->
+  <!-- jQuery (Deferred) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- bootstrap5 -->
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+
+  <!-- Bootstrap5 (Deferred) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- lightbox -->
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+
+  <!-- AOS (Deferred) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <!-- Lightbox (Deferred) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
     integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- sweetalert2 -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js"></script>
-  <!-- masonry -->
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <!-- SweetAlert2 (Deferred) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js" defer></script>
+
+  <!-- Masonry (Async) -->
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
-  <!-- javascript -->
-  <script src="assets/js/script.js"></script>
-</body>
+
+  <!-- Your Custom Script (Deferred) -->
+  <script src="assets/js/script.js" defer></script>
 
 </html>
