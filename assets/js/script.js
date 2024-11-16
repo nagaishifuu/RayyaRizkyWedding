@@ -20,10 +20,16 @@ function playEntranceVideo() {
 
   // Start background music if not already playing
   if (music && !isPlaying) {
-    music.play().catch((error) => console.error("Music autoplay prevented:", error));
-    isPlaying = true;
-    musicButton.innerHTML = '<i class="fas fa-fw fa-compact-disc"></i>';
-    musicButton.classList.add("rotate");
+    music.muted = true; // Mute initially to comply with iOS autoplay policy
+    music.play().then(() => {
+      music.muted = false; // Unmute once playback starts
+      isPlaying = true;
+      musicButton.innerHTML = '<i class="fas fa-fw fa-compact-disc"></i>';
+      musicButton.classList.add("rotate");
+    }).catch((error) => {
+      console.error("Music autoplay prevented:", error);
+      alert("Tap the music button to start playback.");
+    });
   }
 
   // Transition to the next section after video ends
@@ -146,27 +152,15 @@ window.onload = function () {
   loadComments();
 };
 
-
-
-// copy to clipboard
+// Copy to clipboard
 function copyToClipboard() {
-  // Select the text content of the nomor-rekening element
   const rekeningText = document.getElementById("nomor-rekening").innerText;
-  
-  // Create a temporary input element to copy text from
   const tempInput = document.createElement("input");
-  tempInput.value = rekeningText.trim(); // Remove any extra whitespace
-  
+  tempInput.value = rekeningText.trim();
   document.body.appendChild(tempInput);
   tempInput.select();
   tempInput.setSelectionRange(0, 99999); // For mobile devices
-  
-  // Copy the text to the clipboard
   document.execCommand("copy");
-  
-  // Remove the temporary input element
   document.body.removeChild(tempInput);
-  
-  // Display an alert to notify the user
   alert("Nomor rekening berhasil disalin.");
 }
