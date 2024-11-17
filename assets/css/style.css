@@ -77,6 +77,7 @@ body.transition {
   height: 100lvh;             /* Full viewport height */
   object-fit: cover;         /* Ensures video fills screen without distortion */
   z-index: 2;                /* Layer it above other content initially */
+  margin: 0 auto;
 }
 
 
