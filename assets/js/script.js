@@ -60,7 +60,7 @@ function toggleMusic(event) {
 }
 
 // Countdown to Wedding Date
-var countdownDate = new Date("Dec 14, 2024 10:30").getTime();
+var countdownDate = new Date("Dec 14, 2024 15:30").getTime();
 setInterval(function () {
   var now = new Date().getTime();
   var distance = countdownDate - now;
